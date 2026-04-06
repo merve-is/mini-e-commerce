@@ -23,12 +23,12 @@ let navbar = `
 if(!token){
 
     alert("Sipariş için giriş yapmalısınız");
-    window.location.href="/login.html";
+    window.location.href="./login.html";
 };
 if(token){
 
     navbar += `
-        <a href="/profile.html" class="btn btn-primary">
+        <a href="./profile.html" class="btn btn-primary">
             <img class="h-4 w-4" src="user.png">
             Profil
         </a>
@@ -37,7 +37,7 @@ if(token){
 }else{
 
     navbar += `
-        <a href="/login.html" class="btn btn-primary">
+        <a href="./login.html" class="btn btn-primary">
             Giriş Yap
         </a>
     `;
@@ -78,7 +78,7 @@ async function loadProducts() {
             if (logoutBtn) {
                 logoutBtn.addEventListener("click", () => {
                     localStorage.removeItem("token");
-                    window.location.href = "/login.html";
+                    window.location.href = "./login.html";
                 });
             };
     });

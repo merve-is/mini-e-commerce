@@ -5,7 +5,7 @@ const token = localStorage.getItem("token");
 
 // token yoksa login'e gönder
 if(!token){
-    window.location.href = "/login.html";
+    window.location.href = "./login.html";
 }
 
 axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
@@ -34,7 +34,7 @@ async function loadProfile() {
 
         document.getElementById("logoutBtn").addEventListener("click", () => {
             localStorage.removeItem("token");
-            window.location.href = "/login.html";
+            window.location.href = "./login.html";
         });
     } catch (err) {
         console.log("PROFILE ERROR:", err.response);

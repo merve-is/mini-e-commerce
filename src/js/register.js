@@ -54,7 +54,7 @@ registerBtn.addEventListener("click", async () => {
 
         alert("Kayıt başarılı");
 
-        window.location.href = "/login.html";
+        window.location.href = "./login.html";
 
     } catch (error) {
 

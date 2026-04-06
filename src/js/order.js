@@ -18,7 +18,7 @@ window.orderProduct = async function(id){
     if(!token){
         alert("Sipariş vermek için giriş yapmalısınız");
 
-        window.location.href = "/login.html";
+        window.location.href = "./login.html";
         return;
     }
 

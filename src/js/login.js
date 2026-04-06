@@ -44,7 +44,7 @@ loginBtn.addEventListener("click", async () => {
         });
         localStorage.setItem("token", data.token);
         axios.defaults.headers.common["Authorization"] = `Bearer ${data.token}`;
-        window.location.href = "/";
+        window.location.href = "./index.html";
     } 
     catch (error) {
         alert("Giriş başarısız! Email veya şifre hatalı.");
